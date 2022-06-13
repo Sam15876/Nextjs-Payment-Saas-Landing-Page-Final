@@ -1,0 +1,15 @@
+.hero {
+    display: flex;
+    align-content: space-between;
+}
+
+.hero > .content {
+    flex-grow: 1;
+    background-color: #AEC2BA10;
+}
+
+.hero > .graphic {
+    width: 636px;
+    height: 921px;
+    background-color: #AEC2BA;
+}

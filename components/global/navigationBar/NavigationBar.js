@@ -1,15 +1,17 @@
 // NextJS
 import Link from 'next/link'
+import Image from 'next/image'
 
-// CSS
-import styles from './styles.module.css'
+// Images
+import logo from './Pay.svg'
 
 export default function NavigationBar() {
     return (
-        <div className={styles.navBar}>
+        <nav className='absolute top-0 left-0 w-full flex justify-around items-center z-10 pt-12 px-36'>
 
             {/* Navigation links */}
-            <div className={styles.linksSection}>
+            <div className='basis-1/2 flex justify-around items-center '>
+                <Image src={logo} width={'64'} />
                 <Link href='/home'><a>Home</a></Link>
                 <Link href='/features'><a>Features</a></Link>
                 <Link href='/about'><a>About Pay</a></Link>
@@ -17,9 +19,9 @@ export default function NavigationBar() {
             </div>
 
             {/* Download button */}
-            <div className={styles.downloadButtonSection}>
-                <Link href='#'><a>DOWNLOAD</a></Link>
+            <div className='basis-1/2 text-[14px] text-[#191D2A] flex justify-end'>
+                <Link href='#'><a className='p-4 rounded-xl font-semibold bg-white'>DOWNLOAD</a></Link>
             </div>
-        </div>
+        </nav>
     )
 }
