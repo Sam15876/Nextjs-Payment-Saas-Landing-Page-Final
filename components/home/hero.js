@@ -1,3 +1,9 @@
+// NextJS
+import Image from 'next/image'
+
+// Images
+import holdingPhoneImage from '../../public/holdingPhoneImage.png'
+
 // Components
 import MobileStoreButton from '../global/mobileStoreButton/mobileStoreButton'
 
@@ -42,7 +48,8 @@ export default function Hero() {
             </div>
 
             {/* Graphic */}
-            <div className='w-[636px] h-[921px] bg-primary'>
+            <div className='w-[636px] h-[921px] bg-primary flex items-end'>
+                <img alt='Application screenshot' src={holdingPhoneImage.src} />
             </div>
         </section>
     )
