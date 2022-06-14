@@ -18,7 +18,7 @@ export default function Hero() {
                 <div className='flex flex-col justify-center ml-40 gap-y-4 h-full'>
 
                     {/* Title */}
-                    <h1 className='font-bold text-8xl max-w-xl py-4'>Transact Money Easily</h1>
+                    <h1 className='font-bold text-8xl max-w-xl py-4 leading-[110px]'>Transact money easily</h1>
 
                     {/* Description */}
                     <p className='text-xl opacity-70 max-w-md leading-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui id lobortis pretium blandit. Mauris interdum enim ullamcorper consequat, nec sed.</p>
