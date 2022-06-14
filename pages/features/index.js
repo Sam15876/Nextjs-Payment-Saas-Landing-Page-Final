@@ -1,9 +1,9 @@
-import NavigationBar from "../../components/global/navigationBar/NavigationBar";
+// Components
+import PageContainer from "../../components/global/pageContainer/pageContainer"
 
 export default function Features() {
     return(
-        <>
-            <NavigationBar />
-        </>
+        <PageContainer>
+        </PageContainer>
     )
 }

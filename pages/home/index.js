@@ -1,14 +1,11 @@
 // Components
-import NavigationBar from "../../components/global/navigationBar/NavigationBar"
+import PageContainer from "../../components/global/pageContainer/pageContainer"
 import Hero from "../../components/home/hero"
-import Footer from "../../components/global/footer/footer"
 
 export default function Home() {
     return(
-        <>
-            <NavigationBar />
+        <PageContainer>
             <Hero />
-            <Footer />
-        </>
+        </PageContainer>
     )
 }
