@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 // Images
-import logo from './Pay.svg'
+import logo from '../../../public/payLogo.svg'
 
 export default function NavigationBar() {
     return (
