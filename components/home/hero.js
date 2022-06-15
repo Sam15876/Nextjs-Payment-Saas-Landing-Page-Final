@@ -61,7 +61,7 @@ function MetricsComponent({ metrics=[] }) {
         {
             metrics.map((metric, index) => {
                 return(
-                    <div key={metric.name}>
+                    <div key={metric.name} className='flex items-center'>
 
                         {/* Metric box */}
                         <div className={`flex flex-col ${!index ? 'pr-14' : 'px-14'}`}>
@@ -71,7 +71,7 @@ function MetricsComponent({ metrics=[] }) {
 
                         {
                             // Insert separator
-                            index < metrics.length - 1 && <div className='w-[2px] h-1/2 rounded-full bg-[#1D1D1C]/20' />
+                            index < metrics.length - 1 && <div className='w-[2px] h-[20px] rounded-full bg-[#1D1D1C]/20' />
                         }
                     </div>
                 )
