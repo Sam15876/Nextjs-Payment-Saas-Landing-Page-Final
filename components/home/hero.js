@@ -2,7 +2,7 @@
 import Image from 'next/image'
 
 // Images
-import holdingPhoneImage from '../../public/holdingPhoneImage.png'
+import holdingPhoneImage from '../../public/iPhone/holdingPhoneImage.png'
 
 // Components
 import MobileStoreButton from '../global/mobileStoreButton/mobileStoreButton'
