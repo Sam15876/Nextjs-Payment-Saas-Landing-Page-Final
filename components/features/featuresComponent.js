@@ -26,9 +26,9 @@ export default function FeaturesComponent() {
             <div className='relative grow max-w-[620px] w-full aspect-square rounded-full bg-primary/[15%]'>
 
                 {/* iPhones*/}
-                <div className='w-full absolute flex justify-center translate-x-28 translate-y-12'><Image src={iphoneImage1} /></div>
-                <div className='w-full absolute flex justify-center -translate-x-28'><Image src={iphoneImage3} /></div>
-                <div className='w-full absolute flex justify-center translate-y-32'><Image src={iphoneImage2} /></div>
+                <div className='w-full absolute flex justify-center translate-x-28 translate-y-12'><Image src={iphoneImage1} width={500} height={500} objectFit='contain' /></div>
+                <div className='w-full absolute flex justify-center -translate-x-28'><Image src={iphoneImage3} width={500} height={500} objectFit='contain' /></div>
+                <div className='w-full absolute flex justify-center translate-y-32'><Image src={iphoneImage2} width={500} height={500} objectFit='contain' /></div>
             </div>
 
             {/* Right section */}
