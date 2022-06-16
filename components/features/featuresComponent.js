@@ -6,20 +6,14 @@ import iphoneImage1 from '../../public/iPhone/iPhone-back.png'
 import iphoneImage2 from '../../public/iPhone/iPhone-front-charts.png'
 import iphoneImage3 from '../../public/iPhone/iPhone-front-cardDetails.png'
 
-export default function FeaturesComponent() {
+export default function FeaturesComponent({ features }) {
     return(
         <div className='w-full flex justify-center'>
 
             {/* Left section */}
             <div className='basis-[35%] flex flex-col justify-between max-w-xs'>
-                <div>
-                    <h2 className='font-bold text-3xl py-4'>Send Money</h2>
-                    <p className='text-lg leading-7 opacity-70'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui id lobortis pretium blandit.</p>
-                </div>
-                <div>
-                    <h2 className='font-bold text-3xl py-4'>Money Request</h2>
-                    <p className='text-lg leading-7 opacity-70'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui id lobortis pretium blandit.</p>
-                </div>
+                <FeatureElement feature={features[0]} />
+                <FeatureElement feature={features[1]} />
             </div>
 
             {/* Centre section */}
@@ -33,18 +27,23 @@ export default function FeaturesComponent() {
 
             {/* Right section */}
             <div className='basis-[35%] flex flex-col justify-between max-w-xs'>
-                <div>
-                    <h2 className='font-bold text-3xl py-4'>Pay Bill</h2>
-                    <p className='text-lg leading-7 opacity-70'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui id lobortis pretium blandit.</p>
-                </div>
-                <div className='relative'>
-                    <h2 className='font-bold text-3xl py-4'>Mobile Recharge</h2>
-                    <p className='text-lg leading-7 opacity-70'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dui id lobortis pretium blandit.</p>
-                    
+                <FeatureElement feature={features[2]} />
+                <FeatureElement feature={features[3]} className='relative'>
                     {/* Decorative circle */}
                     <div className='w-12 h-12 rounded-full bg-primary/[15%] absolute top-0 left-0 -translate-y-full' />
-                </div>
+                </FeatureElement>
             </div>
+        </div>
+    )
+}
+
+function FeatureElement({ feature, className, children }) {
+    return(
+        <div className={className}>
+            <h2 className='font-bold text-3xl py-4'>{feature?.title}</h2>
+            <p className='text-lg leading-7 opacity-70'>{feature?.content}</p>
+
+            { children }
         </div>
     )
 }

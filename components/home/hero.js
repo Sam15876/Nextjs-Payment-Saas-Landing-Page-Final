@@ -1,13 +1,10 @@
-// NextJS
-import Image from 'next/image'
-
 // Images
 import holdingPhoneImage from '../../public/iPhone/holdingPhoneImage.png'
 
 // Components
 import MobileStoreButton from '../global/mobileStoreButton/mobileStoreButton'
 
-export default function Hero() {
+export default function Hero({ metrics }) {
     return(
         <section className='flex justify-between'>
 
@@ -38,11 +35,7 @@ export default function Hero() {
 
                 {/* Metrics */}
                 <MetricsComponent
-                    metrics={[
-                        { name: 'Active users', value: '5000+' },
-                        { name: 'Downloads', value: '100K' },
-                        { name: 'Reviews', value: '12K' }
-                    ]}
+                    metrics={metrics}
                 />
                     
             </div>
